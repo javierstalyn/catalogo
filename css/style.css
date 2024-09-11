@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+.bg-footer {
+  background: rgb(22, 5, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 5, 43, 0.969625350140056) 27%,
+    rgba(46, 27, 84, 1) 96%
+  );
+  color: rgb(209, 195, 177);
+}
+.w-logo {
+  width: 18vw;
+}
+.color-icons {
+  color: rgb(241, 224, 200);
+}
+.color-icons:hover {
+  color: #94909b;
+}
+.bg-degradeNegro {
+  background: rgb(58, 21, 128);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 21, 128, 1) 84%,
+    rgba(54, 47, 97, 1) 96%
+  );
+}
+.letraError {
+  font-family: "Pixelify Sans", "cursive";
+  font-size: 10rem;
+}
+
+.img-carrusel {
+  width: 13vw;
+}
+
+.efectoFoto:hover {
+  position: relative;
+  top: 2px;
+  right: 2px;
+  filter: sepia(60%);
+  box-shadow: 5px 5px 18px rgb(46, 35, 63);
+}
+
+.btn-reproducir {
+  background: #9a35ef;
+  color: aliceblue;
+}
+.btn-reproducir:hover {
+  background: #4a1079;
+  color: aliceblue;
+}
+
+.btn-reproducir a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.btn-volver {
+  width: 70px;
+  height: 70px;
+  background: #9a35ef;
+  border-radius: 50%;
+  padding: 10px;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 3;
+}
+.btn-volver:hover {
+  width: 70px;
+  height: 70px;
+  background: #392855;
+  border-radius: 50%;
+  padding: 10px;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 3;
+}
+.img-login {
+  background: url(https://img.freepik.com/vector-gratis/rollos-rayas-pelicula-composicion-realista-franjas-curvas-frente-fondo-luces-neon-brillos_1284-59000.jpg?w=740&t=st=1697729954~exp=1697730554~hmac=b67368475d51717d458026ea70bd29327e53a035da13b9e7e4cb5a88405c6e3f);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-destacada {
+  height: 75vh;
+  background-repeat: repeat;
+}
+.btn-play {
+  position: absolute;
+  bottom: 60%;
+  right: 45%;
+  z-index: 3;
+  border-radius: 50%;
+}
+.btn-play :hover {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  z-index: 3;
+}
+
+@media all and (max-width: 480px) {
+  .w-logo {
+    width: 40vw;
+  }
+  .btn-volver {
+    display: none;
+  }
+  .img-carrusel {
+    width: 15vw;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .w-logo {
+    width: 25vw;
+  }
+}

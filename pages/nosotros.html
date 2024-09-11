@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Agustina Mena" />
+    <meta name="description" content="Pagina Web con catalogo de peliculas" />
+    <meta
+      name="keywords"
+      content="html, javascript, vanilla js, boostrap, films"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/assets/rm.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/0b39408f88.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Rolling Movies+</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-footer mb-5 p-3 fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a href="index.html"
+            ><img
+              src="assets/logoRollingMovie.png"
+              alt=""
+              class="img-fluid w-logo"
+          /></a>
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon text-white"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="/index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li id="loginLink" class="nav-item d-block">
+                <a class="nav-link fw-bold" href="/pages/login.html">LOGIN</a>
+              </li>
+              <li id="registerLink" class="nav-item d-block">
+                <a class="nav-link fw-bold" href="/pages/register.html"
+                  >REGISTRO</a
+                >
+              </li>
+              <li id="registerLink" class="nav-item d-block">
+                <a class="nav-link  active fw-bold" href="/pages/nosotros.html"
+                  >NOSOTROS</a
+                >
+              </li>
+              <li id="registerLink" class="nav-item d-block">
+                <a class="nav-link fw-bold" href="/pages/contact.html"
+                  >CONTACTO</a
+                >
+              </li>
+              <li id="adminLink" class="d-none">
+                <a class="nav-link fw-bold" href="/pages/admin.html">ADMIN</a>
+              </li>
+              <li id="logOut" class="d-none">
+                <a class="nav-link fw-bold" href="#">LOG OUT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pt-5 text-white bg-degradeNegro">
+      <section class="container pt-5">
+        <h1 class="display-3 text-center">Sobre Nosotros</h1>
+        <p class="text-center">¡Bienvenidos al equipo de Rolling Movies+!</p>
+        <hr />
+        <p class="text-center">
+          Conoce a nuestro equipo dedicado, comprometido en brindar experiencias
+          inolvidables a nuestros visitantes. Cada miembro de nuestro equipo
+          aporta su experiencia y pasión al proyecto, y juntos trabajamos para
+          hacer de Rolling Movies+ un destino de referencia para los amantes del
+          cine. Permítenos presentarte a algunos de los miembros clave de
+          nuestro equipo:
+        </p>
+      </section>
+      <section class="container py-2">
+        <article class="row justify-content-center bg-footer rounded">
+          <h2 class="text-center fw-bold py-3  text-white">Equipo Rolling Movies+</h2>
+          <div class="col-sm-12 col-md-6 col-lg-4 pt-3 text-center">
+            <img
+              src="https://media.istockphoto.com/id/1459178010/es/foto/industria-de-la-moda-mujer-negra-y-retrato-de-dise%C3%B1ador-de-ropa-sastre-con-visi%C3%B3n-de-negocio.jpg?s=612x612&w=0&k=20&c=6VmvIIvI_fiFm5pcnEuwYLno_8C5SmR5tgru0Khum5w="
+              class="img-fluid rounded-circle shadow w-75"
+              alt="foto miembro del equipo"
+            />
+            <div class="m-2">
+              <h5 class="card-title text-center fw-bold  text-white">Rocio Perez</h5>
+              <p class="card-text text-center">Gerente general</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 pt-3 text-center">
+            <img
+              src="https://media.istockphoto.com/id/1446934118/es/foto/hombre-de-negocios-feliz-escuchando-una-discusi%C3%B3n-en-una-oficina.jpg?s=612x612&w=0&k=20&c=cksluzBZDx27Iqz3kKuD6XuN3xDwo0dKya83kCQFu34="
+              class="img-fluid rounded-circle shadow w-75"
+              alt="foto miembro del equipo"
+            />
+            <div class="m-2">
+              <h5 class="card-title text-center fw-bold  text-white">Santiago Ruiz</h5>
+              <p class="card-text text-center">Departamento de Marketing</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 pt-3 text-center">
+            <img
+              src="https://media.istockphoto.com/id/1475303340/es/foto/retrato-de-un-hombre-de-negocios-adulto-medio-sosteniendo-una-computadora-port%C3%A1til-en-el.jpg?s=612x612&w=0&k=20&c=PKR-JiYvlRwqKb1op92VAXTrHJjAdqAGVa6sV_IPuys="
+              class="img-fluid rounded-circle shadow w-75"
+              alt="foto miembro del equipo"
+            />
+            <div class="m-2">
+              <h5 class="card-title text-center fw-bold  text-white">Axel Ramirez</h5>
+              <p class="card-text text-center">                Departamento de Redaccion de cine
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 pt-3 text-center">
+            <img
+              src="https://media.istockphoto.com/id/1665704172/es/foto/retrato-de-un-joven-dise%C3%B1ador-parado-en-la-oficina-y-usando-una-tableta-mira-a-la-c%C3%A1mara-con.jpg?s=612x612&w=0&k=20&c=bCVo1lfeH2fMElIODnJCx-8u7HzeMHipohX4zkfYAFc="
+              class="img-fluid rounded-circle shadow w-75"
+              alt="foto miembro del equipo"
+            />
+            <div class="m-2">
+              <h5 class="card-title text-center fw-bold  text-white">Tomás Alvarez</h5>
+              <p class="card-text text-center">
+                Departamento de Diseño grafico
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 pt-3 text-center">
+            <img
+              src="https://media.istockphoto.com/id/1469142859/es/foto/exitosa-mujer-de-negocios-de-pie-en-la-oficina-creativa-y-mirando-a-la-c%C3%A1mara.jpg?s=612x612&w=0&k=20&c=RkjY17wUiel92xApjRxwdW8hQ1-w1MNvI_KTHroBq74="
+              class="img-fluid rounded-circle shadow w-75"
+              alt="foto miembro del equipo"
+            />
+            <div class="m-2">
+              <h5 class="card-title text-center fw-bold  text-white">Agustina Diez</h5>
+              <p class="card-text text-center">
+                Departamento de Redaccion de cine
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="container p-3">
+        <article class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <img
+              src="https://media.istockphoto.com/id/1423550628/es/foto/programadores-inform%C3%A1ticos-multitarea-que-trabajan-en-una-oficina-moderna.jpg?s=612x612&w=0&k=20&c=pchwQKKOZFWvENog9R9Fe4G26aJqp9aXc7moLqtX5l4="
+              alt=""
+              class="img-fluid w-100 mb-2"
+            />
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h2 class="text-justify fw-bold mb-4 pb-5">
+              ¡Descubre la excelencia de nuestro servicio!
+            </h2>
+      
+            <div class="row">
+              <div class="col-sm-12 col-md-6 mb-4">
+                <div class="d-flex text-justify">
+                  <i
+                    class="fa-regular fa-face-smile fa-3x pt-2"
+                    style="color: #ffffff"
+                  ></i>
+                  <div class="mx-3">
+                    <h5 class="fw-bold fs-3">+2500</h5>
+                    <p>Clientes felices</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-4">
+                <div class="d-flex text-justify">
+                  <i
+                    class="fa-regular fa-clock fa-3x pt-2"
+                    style="color: #ffffff"
+                  ></i>
+                  <div class="mx-3">
+                    <h5 class="fw-bold fs-3">+30</h5>
+                    <p>Años de experiencia</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-4">
+                <div class="d-flex text-justify">
+                  <i
+                    class="fas fa-trophy fa-3x pt-2"
+                    style="color: #ffffff"
+                  ></i>
+                  <div class="mx-3">
+                    <h5 class="fw-bold fs-3">+20</h5>
+                    <p>Reconomientos conseguidos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-4">
+                <div class="d-flex text-justify">
+                  <i
+                    class="fa-solid fa-plane-departure fa-3x pt-2"
+                    style="color: #ffffff"
+                  ></i>
+                  <div class="mx-3">
+                    <h5 class="fw-bold fs-3">+45</h5>
+                    <p>Exibiciones internacionales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="bg-footer position-relative">
+      <section class="container pt-4 text-center">
+        <article class="row">
+          <div class="col-sm-12 col-md-3 col-lg-3 pt-3">
+            <a href="/index.html">
+              <img
+                src="/assets/logoRollingMovie.png"
+                alt="logo Rolling"
+                width="150"
+                height="auto"
+              />
+            </a>
+            <p class="text-center pt-4">Discover endless cinema</p>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <p class="pt-3 text-center fw-bold text-white">LINKS</p>
+            <ul class="list-unstyled">
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/pages/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/pages/register.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/pages/contact.html">Contacto</a>
+              </li>      
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <p class="pt-3 text-center fw-bold text-white">LEGAL</p>
+            <ul class="list-unstyled">
+              <li class="nav-item">
+                <a class="nav-link active" href="/pages/error.html">Terms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/pages/error.html">Privacy</a>
+              </li>
+            
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <p class="pt-3 fw-bold text-white" >FOLLOW</p>
+            <a href="https://www.facebook.com/" target="_blank" class="color-icons text-decoration-none">
+              <i class="fa-brands fa-facebook-f  fs-2 pe-2"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank"  class="color-icons text-decoration-none">
+              <i class="fa-brands fa-instagram  fs-2 pe-2"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank"  class="color-icons text-decoration-none">
+              <i class="fa-brands fa-twitter  fs-2 pe-2"></i>
+            </a>
+          </div>
+          
+        </article>
+      </section>
+      <section class="text-center pb-3">
+        <hr>
+        <p>©RollingMovie+ All Rights Reserved</p>
+      </section>
+    </footer> 
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/nosotros.js" type="module"></script>
+   
+  </body>
+</html>
