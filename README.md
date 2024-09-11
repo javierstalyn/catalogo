@@ -7,4 +7,4 @@ El sitio cuenta con una página principal con el catálogo de películas y/o ser
 - Boostrap
 - Sweet Alert
 
-Autora: Agustina Mena.
+Autor: Stalyn Gonzalez.
